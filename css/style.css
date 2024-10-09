@@ -1,29 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 70px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar Style */
 
 .top_nav {
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(42, 13, 38, 0.7);
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 140px;
     z-index: 1000;
     height: 70px;
+    color: white;
 }
 
 .logo {
@@ -69,43 +68,92 @@ body {
 }
 
 /* Hero Image Style */
-
 .hero {
     position: relative;
     width: 100%;
-    height: auto;
-    background: url('images/heroImage.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh; /* Full-screen height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background: url('images/heroImage.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .heroImg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    overflow-y: auto;
+    position: relative;
+}
+
+.uniqloU {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 45px;
+    width: 65px;
+}
+
+.uniqloU img {
+    max-width: 100%;
+    height: auto;
+}
+
+.uniqloUT {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    height: 40px;
+    width: 60px;
+}
+
+.uniqloUT img {
+    max-width: 100%;
+    height: auto;
 }
 
 .heroText h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .heroText p {
-    font-size: 1.25rem;
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 17px;
+}
+
+.heroText p2 {
+    position: absolute;
+    top: 67%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 17px;
+}
+
+.heroText p3 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 17px;
 }
 
 
 /* Footer Style */
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 85%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -114,6 +162,10 @@ footer {
 }
 
 .footerButtons {
+    position: fixed;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     gap: 200px;
