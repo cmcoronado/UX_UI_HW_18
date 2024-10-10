@@ -188,3 +188,67 @@ footer {
 .footer-btn:hover {
     background-color: #ddd;
 }
+
+@media only screen and (max-width: 600px) {
+    /* Adjust the navigation bar for mobile view */
+    .top_nav {
+      padding: 10px;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+  
+    .logo {
+      width: 60px;
+      height: auto;
+      margin: 10px 0;
+    }
+  
+    .nav_menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .icons {
+      gap: 15px;
+      justify-content: center;
+    }
+  
+    /* Adjust hero section for mobile view */
+    .hero {
+      height: auto;
+      background-size: cover;
+    }
+  
+    .uniqloU, .uniqloUT {
+      position: static;
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    .heroText h1, .heroText p, .heroText p2, .heroText p3 {
+      position: static;
+      text-align: center;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+  
+    /* Adjust footer for mobile view */
+    footer {
+      top: auto;
+      position: relative;
+      padding: 20px 0;
+    }
+  
+    .footerButtons {
+      flex-direction: column;
+      gap: 30px;
+      bottom: 10%;
+    }
+  
+    .footer-btn {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

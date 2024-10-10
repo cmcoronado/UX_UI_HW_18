@@ -370,3 +370,128 @@ body {
     text-align: left;
     font-size: 17px;
 }
+
+@media only screen and (max-width: 600px) {
+    /* Adjust the navigation bar for mobile view */
+    .top_nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin: 0;
+      width: 100px;
+      height: auto;
+    }
+  
+    .nav_menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+    }
+  
+    .icons {
+      justify-content: center;
+    }
+  
+    /* Adjust hero section for mobile view */
+    .hero {
+      height: auto;
+    }
+  
+    .hero-video {
+      height: auto;
+    }
+  
+    .videoText {
+      top: 60%;
+      font-size: 14px;
+    }
+  
+    .hero-btn {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    /* Adjust the second section (ut-graphic-section) */
+    .ut-graphic-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .utImage {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .utText {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .utCarousel {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .carouselWrapper {
+      flex-direction: column;
+    }
+  
+    .slide {
+      width: 100%;
+      min-width: 100%;
+    }
+  
+    /* Adjust third section for mobile view */
+    .third-section {
+      padding: 20px;
+    }
+  
+    .content-box {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .card img {
+      width: 100px;
+    }
+  
+    /* Adjust UT Collection Section */
+    .ut-collection {
+      padding: 20px;
+    }
+  
+    .ut-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .ut-card {
+      width: 100%;
+    }
+  
+    /* Adjust font size for hero text */
+    .heroText h1 {
+      font-size: 20px;
+    }
+  
+    .heroText p {
+      font-size: 14px;
+    }
+  
+    .heroText p2,
+    .heroText p3 {
+      font-size: 14px;
+    }
+  }
+  
